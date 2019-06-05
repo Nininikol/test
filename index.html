@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="col-9 container">
+	<div class="vopros1">
+		<div class="text-center mt-5">
+			<h1>В каком по счету кабинете находится 'IT школа Илларонова'?</h1>
+		</div>
+		<div class="col-12 border py-2 answer1">
+			<p>430</p>
+		</div>
+		<div class="col-12 border py-2 answer2">
+			<p>420</p>
+		</div>
+		<div class="col-12 border py-2 answer3">
+			<p>web-1</p>
+		</div>
+	</div>
+
+	<div class="vopros2" style="display: none">
+		<div class="text-center mt-5">
+			<h1>Меню обновилось! Что там нового?</h1>
+		</div>
+		<div class="col-12 border py-2 answer4">
+			<p>Кексы</p>
+		</div>
+		<div class="col-12 border py-2 answer5">
+			<p>Бургер</p>
+		</div>
+		<div class="col-12 border py-2 answer6">
+			<p>Липтон</p>
+		</div>
+	</div>
+
+	<div class="vopros3" style="display: none">
+		<div class="text-center mt-5">
+			<h1>Сколько 'мативационных' надписей в этом коридоре?</h1>
+		</div>
+		<div class="col-12 border py-2 answer7">
+			<p>10</p>
+		</div>
+		<div class="col-12 border py-2 answer8">
+			<p>9</p>
+		</div>
+		<div class="col-12 border py-2 answer9">
+			<p>8</p>
+		</div>
+	</div>
+
+	<div class="vopros4" style="display: none">
+		<div class="text-center mt-5">
+			<h1>В папке нашего урока спрятан ключ, иди по нему и назови код</h1>
+		</div>
+		<div class="col-12 border py-2 answer10">
+			<p>26042002</p>
+		</div>
+		<div class="col-12 border py-2 answer11">
+			<p>16022019</p>
+		</div>
+		<div class="col-12 border py-2 answer12">
+			<p>01092018</p>
+		</div>
+	</div>
+
+	<div class="vopros5" style="display: none">
+		<div class="text-center mt-5">
+			<h1>В какой фазе луна? ДА, АСТРАНОМИЯ</h1>
+			<img src="luna.jpg">
+		</div>
+		<div class="col-12 border py-2 answer13">
+			<p>Растущая</p>
+		</div>
+		<div class="col-12 border py-2 answer14">
+			<p>Убывающая</p>
+		</div>
+		<div class="col-12 border py-2 answer15">
+			<p>Восходящая</p>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+//1 вопрос
+	document.querySelector('.answer1').onclick = function(){
+		alert('ЛООООл не верно')
+	}
+
+	document.querySelector('.answer2').onclick = function(){
+		alert("Верно, умеешь читать");
+		document.querySelector('.vopros2').style.display='block';
+		document.querySelector('.vopros1').style.display='none';
+	}
+
+	document.querySelector('.answer3').onclick = function(){
+		alert("Я спрашивала в каком по счету, а не это. Читай внимательнее!")
+	}
+
+//2 вопрос
+
+	document.querySelector('.answer4').onclick = function(){
+		alert("Кексы топ");
+		document.querySelector('.vopros3').style.display='block';
+		document.querySelector('.vopros2').style.display='none';
+	}
+
+	document.querySelector('.answer5').onclick = function(){
+		alert("Сендвичи есть, бургера нет");
+	}
+
+	document.querySelector('.answer6').onclick = function(){
+		alert("Пей кофе, не верно")
+	}
+//3 вопрос
+	document.querySelector('.answer7').onclick = function(){
+		alert("Пиу пау не верно");
+	}
+
+	document.querySelector('.answer8').onclick = function(){
+		alert("Ты думал о том зачем они нужны? Правильный отвееет, надеюсь ты не выходил их считать?");
+		document.querySelector('.vopros4').style.display='block';
+		document.querySelector('.vopros3').style.display='none';
+	}
+
+	document.querySelector('.answer9').onclick = function(){
+		alert("8 красивое число, но все еще не верно")
+	}
+//4 вопрос
+document.querySelector('.answer10').onclick = function(){
+		alert("Это мой день рождения, если увидел не забудь угостить. НЕ ВЕРНО");
+	}
+
+	document.querySelector('.answer11').onclick = function(){
+		alert("Неужели ты думал, что все так просто?");
+	}
+
+	document.querySelector('.answer12').onclick = function(){
+		alert("Вау, ты сделал это! Mолодец")
+		document.querySelector('.vopros5').style.display='block';
+		document.querySelector('.vopros4').style.display='none';
+	}
+//5 вопрос
+document.querySelector('.answer13').onclick = function(){
+		alert("Почти");
+	}
+
+	document.querySelector('.answer14').onclick = function(){
+		alert("МОЛОДЧИК, я сама запуталась пока искала");
+		document.querySelector('.vopros6').style.display='block';
+		document.querySelector('.vopros5').style.display='none';
+	}
+
+	document.querySelector('.answer15').onclick = function(){
+		alert("НЕА")
+	}
+
+
+	
+
+</script>
+
+
+</body>
+</html>
